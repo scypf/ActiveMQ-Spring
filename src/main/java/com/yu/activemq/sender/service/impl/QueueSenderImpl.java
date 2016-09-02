@@ -3,6 +3,7 @@ package com.yu.activemq.sender.service.impl;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
+import javax.jms.TextMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -37,6 +38,7 @@ public class QueueSenderImpl implements MsgSender{
 				return session.createTextMessage(message);
 			}
 		});
+			System.out.println("已向队列中发送消息:"+message);
 	}
 	
 }

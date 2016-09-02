@@ -38,6 +38,7 @@ public class TopicSenderImpl implements MsgSender{
 				return session.createTextMessage(message);
 			}
 		});
+		System.out.println("已向topic中发送消息:"+message);
 	}
 
 }
