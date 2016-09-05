@@ -3,7 +3,6 @@ package com.yu.activemq.sender.service.impl;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
-import javax.jms.TextMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
